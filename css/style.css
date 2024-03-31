@@ -84,7 +84,7 @@ img{
 	background-color: #0a0a0a;
 	font-size: 12px;
 	font-weight: 600;
-	position: relative;
+	position: center;
 }
 .topleft{
 	float: center;
@@ -142,22 +142,20 @@ img{
 .header{
 	display: inline-block;
 	width: 100%;
-	float: right;
-	padding: 0px 4px;
-	height: 14%;
+	float: center;
 	border-bottom: 5px solid #fdfbfbf4;
 	background-color: #5b5a59;
 }
 .header .logo{
-	padding: 0px 740px;
-	float: left;
-	width: 200%;
+	padding: 0px 700px;
+	float: center;
+	width: 100%;
 }
 /*Categories Menu*/
 .productContent{
 	display: inline-block;
 	width: 100%;
-	float: left;
+	float: center;
 	padding: 15px 0;
 	position: relative;
 }
@@ -171,7 +169,7 @@ img{
 .productContent .productCategories ul li{
 	display: inline-block;
 	width: 100%;
-	float: left;
+	float: center;
 	margin: 5px 0 10px;
 }
 .productContent .productCategories ul li a i.fa-caret-right{
