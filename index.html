@@ -146,13 +146,15 @@
 			<!-- Slider Start -->
 			<div class="productSlider">
 				<div id="sliderShuffle" class="sliderInner">
-					<video loop autoplay style="height: 165%; width: 200%;">
+					<video autoplay muted style="height: 165%; width: 200%;">
 						<source src="img/1banner.mp4" type="video/mp4">
 					</video>
 				</div>
 				<!-- <div class="cycle-control"  >
 					<span id="next" ><i class="fas fa-angle-right" style="color: aliceblue;"></i></span>
 					<span id="prev"><i class="fas fa-angle-left" style="color: aliceblue;"></i></span>
+					<img src="images/1.jpg" />
+					<img src="images/2.jpg" />
 				</div> -->
 			</div>
 			<!-- Slider End -->
@@ -358,10 +360,6 @@
 <script src="js/jquery.cycle.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script>
-	$("#sliderShuffle").cycle({
-		next: '#next',
-		prev: '#prev'
-	});
 	
 	$('.owl-carousel').owlCarousel({
 		items:1,
