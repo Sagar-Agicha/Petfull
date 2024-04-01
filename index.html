@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>PetFull</title>
+	<link rel="icon" type="image/x-icon" href="/images/logo.ico">
 	<!-- Font Awesome, Style -->
 	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
-	<link rel="icon" type="image/x-icon" href="/images/logo.ico">
 </head>
 
 <body>
@@ -145,8 +146,9 @@
 			<!-- Slider Start -->
 			<div class="productSlider">
 				<div id="sliderShuffle" class="sliderInner">
-					<img src="images/1.jpg" />
-					<img src="images/2.jpg" />
+					<video loop autoplay style="height: 165%; width: 200%;">
+						<source src="images/1banner.mp4" type="video/mp4">
+					</video>
 				</div>
 				<!-- <div class="cycle-control"  >
 					<span id="next" ><i class="fas fa-angle-right" style="color: aliceblue;"></i></span>
@@ -362,11 +364,11 @@
 	});
 	
 	$('.owl-carousel').owlCarousel({
-		items:4,
+		items:1,
 		loop:true,
 		margin:15,
 		autoplay:true,
-		autoplayTimeout:3000, //3 Second
+		autoplayTimeout:5000, //3 Second
 		nav:true,
 		responsiveClass:true,
 		responsive:{
