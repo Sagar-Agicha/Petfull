@@ -2,12 +2,12 @@
 <html>
 <head>
 	<title>Sushi Chef's Kit</title>
+	<link rel="icon" type="image/x-icon" href="/images/logo.ico">
 	<!-- Font Awesome, Style -->
 	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="css/smoothproducts.css">
-	<link rel="icon" type="image/x-icon" href="/images/logo.ico">
 </head>
 <body>
 	<!-- Topbar Start -->
@@ -26,8 +26,8 @@
 			<div class="topcenter">
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="contactus.html" target="_blank">Contact Us</a></li>
-					<li><a href="profile.html" target="_blank">Company Profile</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+					<li><a href="profile.html">Company Profile</a></li>
 				</ul>
 			</div>
 	
@@ -37,8 +37,8 @@
 					<li><a href="#" style="color: aliceblue;"><i class="fas fa-phone"></i> +91-87504-xxxxx</a></li>
 					<li><a href="#" style="color: aliceblue;"><i class="fas fa-user"></i> My Profile <i class="fas fa-caret-down"></i></a>
 						<ul class="myprofile-dropdown">
-							<li><a href="#">My Cart</a></li>
-							<li><a href="#">Delivered Order</a></li>
+							<li><a href="#">Profile</a></li>
+							<li><a href="#">Your Orders</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -47,14 +47,13 @@
 	</div>
 	<!-- Topbar End -->
 	
-	<!-- Header Start -->
-	<div class="header">
-			<div class="logo">
-				<img width="120" height="120" src="images/logo.png">
-		</div>
-	</div>
-	<!-- Header End -->	
-
+<!-- Header Start -->
+<div class="header" style="height: 12%;">
+	<div class="logo" style="height: 50%;">
+		<img width="90" height="80" src="images/logo.png">
+</div>
+</div>
+<!-- Header End -->	
 	
 	<!-- Product Detail Page Start -->
 	<div class="product-detail">
@@ -304,6 +303,18 @@
 
 		$(".sp-wrap").smoothproducts();
 	});
+
+	addEventListener('load', function(e){
+		e.preventDefault();
+
+		const P_name = "Sushi Starter's Kit";
+		const P_img = "images/21_big.jpg";
+		const P_price = "500";
+
+		sessionStorage.setItem('P_name', P_name);
+		sessionStorage.setItem('P_img', P_img);
+		sessionStorage.setItem('P_price', P_price);
+	})
 </script>
 </body>
 </html>
